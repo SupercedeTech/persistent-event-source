@@ -5,7 +5,7 @@ import Test.Tasty.QuickCheck as QC
 import Test.Tasty.HUnit
 
 import Data.List(sort)
-import qualified Persistent.Event.Source
+import qualified Persistent.Event.Source()
 
 main :: IO ()
 main = defaultMain tests
@@ -35,6 +35,4 @@ unitTests = testGroup "Unit tests"
   -- the following test does not hold
   , testCase "List comparison (same length)" $
       oneTwoThree `compare` [1,2,3] @?= EQ
-  , testCase "run main" $ do
-      Persistent.Event.Source.main
   ]

@@ -2,7 +2,7 @@
 {-# LANGUAGE TypeFamilyDependencies #-}
 module Persistent.Event.Source.Projection where
 
-import Database.Persist.Monad
+import Database.Persist.Monad(MonadSqlQuery)
 import Control.Monad.IO.Unlift
 import Control.Monad.Logger
 

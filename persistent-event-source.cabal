@@ -26,6 +26,8 @@ source-repository head
 library
   exposed-modules:
       Persistent.Event.Source
+      Persistent.Event.Source.Aggregate
+      Persistent.Event.Source.EventStore
       Persistent.Event.Source.Projection
   other-modules:
       Paths_persistent_event_source
@@ -55,6 +57,7 @@ library
   build-depends:
       base >=4.7 && <5
     , monad-logger
+    , persistent
     , persistent-mtl
     , unliftio-core
   default-language: Haskell2010
@@ -90,6 +93,7 @@ test-suite unit
   build-depends:
       base >=4.7 && <5
     , monad-logger
+    , persistent
     , persistent-event-source
     , persistent-mtl
     , tasty
