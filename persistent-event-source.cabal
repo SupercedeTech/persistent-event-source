@@ -6,6 +6,8 @@ cabal-version: 1.12
 
 name:           persistent-event-source
 version:        0.1.0
+synopsis:       Persistent based event sourcing.
+description:    Event source library for persistent databases.
 homepage:       https://github.com/jappeace/persistent-event-source#readme
 bug-reports:    https://github.com/jappeace/persistent-event-source/issues
 author:         Jappie Klooster
