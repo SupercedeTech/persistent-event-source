@@ -22,8 +22,3 @@ class Projection a => EventStore a where
   -- | Will load all events on nothing
   loadUnappliedEvents :: (MonadIO m, MonadSqlQuery m) => Maybe (Key (Event a)) -> m [Entity (Event a)]
 
-applyEventsSince :: (EventStore a, MonadUnliftIO m, MonadSqlQuery m, MonadLogger m) => Maybe (Key (Event a)) -> m ()
-applyEventsSince lastEventId = do
-  events <- loadUnappliedEvents lastEventId
-  traverse_ (apply . entityVal) events
-  markEventsApplied $ entityKey <$> events

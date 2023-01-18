@@ -1,5 +1,6 @@
 module Persistent.Event.Source
   ( handleCmdWithAuthor
+  , applyEventsSince
   , module X
   )
 where
@@ -23,3 +24,9 @@ handleCmdWithAuthor mAuthorId cmd = do
   eventIds <- storeMany events
   markEventsApplied eventIds
   pure $ zipWith Entity eventIds events
+
+applyEventsSince :: (EventStore a, MonadUnliftIO m, MonadSqlQuery m, MonadLogger m) => Maybe (Key (Event a)) -> m ()
+applyEventsSince lastEventId = do
+  events <- loadUnappliedEvents lastEventId
+  traverse_ (apply . entityVal) events
+  markEventsApplied $ entityKey <$> events
