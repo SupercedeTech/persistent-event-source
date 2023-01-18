@@ -53,6 +53,9 @@ default-extensions:
 
 dependencies:
 - base >= 4.7 && < 5
+- persistent-mtl
+- unliftio-core
+- monad-logger
 
 library:
   source-dirs: src
@@ -60,6 +63,7 @@ library:
 tests:
   unit:
     main:                Test.hs
+    ghc-options: -Wno-unused-packages
     source-dirs:
     - test
     dependencies:
