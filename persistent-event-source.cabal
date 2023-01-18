@@ -25,9 +25,12 @@ source-repository head
 
 library
   exposed-modules:
+      Database.Esqueleto.Monad.Experimental
+      Database.Esqueleto.Monad.Legacy
       Persistent.Event.Source
       Persistent.Event.Source.Aggregate
       Persistent.Event.Source.EventStore
+      Persistent.Event.Source.EventStore.Default
       Persistent.Event.Source.Projection
   other-modules:
       Paths_persistent_event_source
@@ -56,9 +59,12 @@ library
   ghc-options: -Wall -Wcompat -Wincomplete-uni-patterns -Wredundant-constraints -Wincomplete-record-updates -Widentities -Wcpp-undef -fwarn-tabs -Wpartial-fields -fdefer-diagnostics -Wunused-packages
   build-depends:
       base >=4.7 && <5
+    , esqueleto
     , monad-logger
     , persistent
     , persistent-mtl
+    , text
+    , time
     , unliftio-core
   default-language: Haskell2010
 
@@ -92,6 +98,7 @@ test-suite unit
   ghc-options: -Wall -Wcompat -Wincomplete-uni-patterns -Wredundant-constraints -Wincomplete-record-updates -Widentities -Wcpp-undef -fwarn-tabs -Wpartial-fields -fdefer-diagnostics -Wunused-packages -Wno-unused-packages
   build-depends:
       base >=4.7 && <5
+    , esqueleto
     , monad-logger
     , persistent
     , persistent-event-source
@@ -99,5 +106,7 @@ test-suite unit
     , tasty
     , tasty-hunit
     , tasty-quickcheck
+    , text
+    , time
     , unliftio-core
   default-language: Haskell2010

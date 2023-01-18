@@ -57,6 +57,9 @@ dependencies:
 - unliftio-core
 - monad-logger
 - persistent
+- time
+- esqueleto
+- text
 
 library:
   source-dirs: src
