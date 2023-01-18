@@ -9,7 +9,7 @@ import Control.Monad.IO.Class
 
 class Projection a => Aggregate a where
   type Command a = cmd | cmd -> a
-  type Actor a = user | user -> a
+  type Actor a
 
   -- Validate action and generate events, if any.
   -- TODO: handle invalid actions
