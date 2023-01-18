@@ -13,14 +13,6 @@ TODO:
 
 ## Usage
 
-### Modifying for your project
-Assuming the name of your new project is `new-project`.
-
-```
-git clone git@github.com:jappeace/persistent-event-source.git new-project
-cd new-project
-```
-
 ### Tools
 Enter the nix shell.
 ```
