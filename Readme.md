@@ -1,9 +1,5 @@
-[![https://jappieklooster.nl](https://img.shields.io/badge/blog-jappieklooster.nl-lightgrey)](https://jappieklooster.nl/tag/haskell.html)
-[![Jappiejappie](https://img.shields.io/badge/twitch.tv-jappiejappie-purple?logo=twitch)](https://www.twitch.tv/jappiejappie)
-[![Jappiejappie](https://img.shields.io/badge/youtube-jappieklooster-red?logo=youtube)](https://www.youtube.com/channel/UCQxmXSQEYyCeBC6urMWRPVw)
-[![Githbu actions build status](https://img.shields.io/github/workflow/status/jappeace/haskell-template-project/Test)](https://github.com/jappeace/haskell-template-project/actions)
-[![Jappiejappie](https://img.shields.io/badge/discord-jappiejappie-black?logo=discord)](https://discord.gg/Hp4agqy)
-[![Hackage version](https://img.shields.io/hackage/v/template.svg?label=Hackage)](https://hackage.haskell.org/package/template) 
+[![Githbu actions build status](https://img.shields.io/github/workflow/status/jappeace/persistent-event-source/Test)](https://github.com/jappeace/haskell-template-project/actions)
+[![Hackage version](https://img.shields.io/hackage/v/template.svg?label=Hackage)](https://hackage.haskell.org/package/persistent-event-source) 
 
 > The eye that looks ahead to the safe course is closed forever.
 
@@ -31,7 +27,7 @@ Comes with:
 Assuming the name of your new project is `new-project`.
 
 ```
-git clone git@github.com:jappeace/haskell-template-project.git new-project
+git clone git@github.com:jappeace/persistent-event-source.git new-project
 cd new-project
 ```
 
@@ -52,7 +48,7 @@ cd new-project
 
 #### Reconfigure remotes
 ```
-git remote add template git@github.com:jappeace/haskell-template-project.git
+git remote add template git@github.com:jappeace/persistent-event-source.git
 git remote set-url origin git@github.com:YOUR-ORG-OR-USER-NAME/new-project.git
 ```
 

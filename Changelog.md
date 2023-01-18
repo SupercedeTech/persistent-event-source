@@ -1,4 +1,4 @@
-# Change log for template project
+# Change log for persistent-event-source project
 
 ## Version 0.0.0 
 
