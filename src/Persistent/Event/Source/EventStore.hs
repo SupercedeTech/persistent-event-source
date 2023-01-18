@@ -8,6 +8,7 @@ import Control.Monad.IO.Unlift
 import Database.Persist.Monad(MonadSqlQuery)
 import Database.Persist.Class.PersistEntity
 
+-- | Determines how events are stored and retrieved.
 class Projection a => EventStore a where
 
   storeMany :: (MonadIO m, MonadSqlQuery m) => [Event a] -> m [Key (Event a)]
