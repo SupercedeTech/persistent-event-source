@@ -10,6 +10,7 @@ TODO:
 + [ ] I'd like to also add the reapply in a transaction
       code, we'd need to refactor so the tables are known
       by the system so we can automatically generate a truncate query.
++ [ ] Upstream Database.Esqueleto.* to the right package
 
 ## Usage
 
