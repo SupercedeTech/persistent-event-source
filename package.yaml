@@ -6,7 +6,8 @@ maintainer:          "jappieklooster@hotmail.com"
 copyright:           "2023 Jappie Klooster"
 github:              "jappeace/persistent-event-source"
 synopsis:            Persistent based event sourcing.
-description:            Event source library for persistent databases.
+description:         Event source library for persistent databases.
+category:            Database
 
 extra-source-files:
 - Readme.md
