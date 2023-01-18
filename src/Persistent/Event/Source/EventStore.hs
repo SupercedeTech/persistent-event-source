@@ -5,10 +5,8 @@ module Persistent.Event.Source.EventStore where
 
 import Persistent.Event.Source.Projection
 import Control.Monad.IO.Unlift
-import Control.Monad.Logger
 import Database.Persist.Monad(MonadSqlQuery)
 import Database.Persist.Class.PersistEntity
-import Data.Foldable
 
 class Projection a => EventStore a where
 
