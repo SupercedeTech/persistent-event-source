@@ -4,3 +4,5 @@ packages:
 
 extra-deps:
  - esqueleto-3.5.8.1@sha256:eaae6df05ee00931a2a00122938ad65d1630036582628c2ea5c1e1763bf96cae,4965
+ - persistent-2.14.4.4@sha256:e0da522a52246aa3e3e9295daddf765ca7ed7c753cf3d26fe3b88dbaa42c6320,7199
+ - persistent-mtl-0.5.0.1@sha256:44e14fdf2906676e8d40262ab1a4da6d22f766d4b6140be7321f662c05fb0ae2,3011
