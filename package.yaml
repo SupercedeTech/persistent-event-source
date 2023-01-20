@@ -56,7 +56,7 @@ default-extensions:
 
 dependencies:
 - base >= 4.7 && < 5
-- persistent-mtl
+- persistent-mtl >= 0.3.0.0 && < 1.0.0.0
 - unliftio-core
 - monad-logger
 - persistent

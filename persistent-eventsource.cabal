@@ -65,7 +65,7 @@ library
     , esqueleto >=3.5.0.0 && <3.6.0.0
     , monad-logger
     , persistent
-    , persistent-mtl
+    , persistent-mtl >=0.3.0.0 && <1.0.0.0
     , text
     , time
     , unliftio-core
@@ -105,7 +105,7 @@ test-suite unit
     , monad-logger
     , persistent
     , persistent-eventsource
-    , persistent-mtl
+    , persistent-mtl >=0.3.0.0 && <1.0.0.0
     , tasty
     , tasty-hunit
     , tasty-quickcheck
