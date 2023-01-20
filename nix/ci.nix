@@ -1,7 +1,7 @@
 {
   default = import ../default.nix {};
   # https://github.com/NixOS/nixpkgs/blob/master/pkgs/top-level/haskell-packages.nix#L47
-  pkgs = (import ./pkgs.nix).haskellPackages.persistent-event-source;
+  pkgs = (import ./pkgs.nix).haskellPackages.persistent-eventsource;
 
   shell = (import ../shell.nix {});
   # bundle = (import ./bundle.nix {});

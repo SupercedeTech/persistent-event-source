@@ -2,7 +2,7 @@
 {-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE FlexibleContexts #-}
 
-module Persistent.Event.Source.EventStore.Default where
+module Persistent.EventSource.EventStore.Default where
 
 import qualified Database.Esqueleto.Monad.Experimental as Ex
 import Database.Persist.Monad.Class

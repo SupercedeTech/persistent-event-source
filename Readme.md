@@ -1,5 +1,5 @@
-[![Githbu actions build status](https://img.shields.io/github/workflow/status/jappeace/persistent-event-source/Test)](https://github.com/jappeace/persistent-event-source/actions)
-[![Hackage version](https://img.shields.io/hackage/v/template.svg?label=Hackage)](https://hackage.haskell.org/package/persistent-event-source) 
+[![Githbu actions build status](https://img.shields.io/github/workflow/status/jappeace/persistent-eventsource/Test)](https://github.com/jappeace/persistent-eventsource/actions)
+[![Hackage version](https://img.shields.io/hackage/v/template.svg?label=Hackage)](https://hackage.haskell.org/package/persistent-eventsource) 
 
 Persistent based event sourcing.
 

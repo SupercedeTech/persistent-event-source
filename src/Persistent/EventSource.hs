@@ -1,13 +1,13 @@
-module Persistent.Event.Source
+module Persistent.EventSource
   ( handleCmdWithAuthor
   , applyEventsSince
   , module X
   )
 where
 
-import Persistent.Event.Source.Projection as X
-import Persistent.Event.Source.Aggregate as X
-import Persistent.Event.Source.EventStore as X
+import Persistent.EventSource.Projection as X
+import Persistent.EventSource.Aggregate as X
+import Persistent.EventSource.EventStore as X
 import Database.Persist.Monad(MonadSqlQuery)
 import Database.Persist.Class.PersistEntity
 import Control.Monad.IO.Unlift

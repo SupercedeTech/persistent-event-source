@@ -1,10 +1,10 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE TypeFamilyDependencies #-}
 
-module Persistent.Event.Source.Aggregate where
+module Persistent.EventSource.Aggregate where
 
 import Database.Persist.Monad (MonadSqlQuery)
-import Persistent.Event.Source.Projection
+import Persistent.EventSource.Projection
 import Control.Monad.IO.Class
 
 -- | Aggregate is an intermediate step, allowing you to specify how

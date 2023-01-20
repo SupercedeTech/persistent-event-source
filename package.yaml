@@ -1,10 +1,10 @@
-name:                persistent-event-source
+name:                persistent-eventsource
 version:             0.2.0
 license:             MIT
 author:              "Jappie Klooster"
 maintainer:          "jappieklooster@hotmail.com"
 copyright:           "2023 Jappie Klooster"
-github:              "jappeace/persistent-event-source"
+github:              "jappeace/persistent-eventsource"
 synopsis:            Persistent based event sourcing.
 description:         Event source library for persistent databases.
 category:            Database
@@ -77,4 +77,4 @@ tests:
     - tasty
     - tasty-quickcheck
     - tasty-hunit
-    - persistent-event-source
+    - persistent-eventsource

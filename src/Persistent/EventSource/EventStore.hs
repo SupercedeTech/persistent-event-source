@@ -1,9 +1,9 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE TypeFamilyDependencies #-}
 
-module Persistent.Event.Source.EventStore where
+module Persistent.EventSource.EventStore where
 
-import Persistent.Event.Source.Projection
+import Persistent.EventSource.Projection
 import Control.Monad.IO.Unlift
 import Database.Persist.Monad(MonadSqlQuery)
 import Database.Persist.Class.PersistEntity

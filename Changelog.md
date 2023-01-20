@@ -1,4 +1,4 @@
-# Change log for persistent-event-source project
+# Change log for persistent-eventsource project
 
 ## Version 0.2.0 
 
