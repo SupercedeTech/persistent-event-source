@@ -1,3 +1,6 @@
 resolver: lts-17.15
 packages:
 - '.'
+
+extra-deps:
+ - esqueleto-3.5.8.1@sha256:eaae6df05ee00931a2a00122938ad65d1630036582628c2ea5c1e1763bf96cae,4965
