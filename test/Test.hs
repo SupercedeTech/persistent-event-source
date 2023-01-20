@@ -5,7 +5,7 @@ import Test.Tasty.QuickCheck as QC
 import Test.Tasty.HUnit
 
 import Data.List(sort)
-import qualified Persistent.Event.Source()
+import qualified Persistent.EventSource()
 
 main :: IO ()
 main = defaultMain tests
