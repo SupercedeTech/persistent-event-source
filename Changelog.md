@@ -2,6 +2,8 @@
 
 ## Version 0.2.0 
 
++ rename persistent-event-source to persistent-eventsource
+
 ## Version 0.1.0 
 
 + Add initial interface
