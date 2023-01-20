@@ -1,5 +1,7 @@
 # Change log for persistent-eventsource project
 
+## Version 0.3.0 
+
 ## Version 0.2.0 
 
 + rename persistent-event-source to persistent-eventsource
