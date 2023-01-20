@@ -62,7 +62,7 @@ library
   ghc-options: -Wall -Wcompat -Wincomplete-uni-patterns -Wredundant-constraints -Wincomplete-record-updates -Widentities -Wcpp-undef -fwarn-tabs -Wpartial-fields -fdefer-diagnostics -Wunused-packages
   build-depends:
       base >=4.7 && <5
-    , esqueleto >=3.5.0.0 && <3.6.0.0
+    , esqueleto >=3.5.0.0 && <3.5.7.0
     , monad-logger
     , persistent
     , persistent-mtl >=0.3.0.0 && <1.0.0.0
@@ -101,7 +101,7 @@ test-suite unit
   ghc-options: -Wall -Wcompat -Wincomplete-uni-patterns -Wredundant-constraints -Wincomplete-record-updates -Widentities -Wcpp-undef -fwarn-tabs -Wpartial-fields -fdefer-diagnostics -Wunused-packages -Wno-unused-packages
   build-depends:
       base >=4.7 && <5
-    , esqueleto >=3.5.0.0 && <3.6.0.0
+    , esqueleto >=3.5.0.0 && <3.5.7.0
     , monad-logger
     , persistent
     , persistent-eventsource
