@@ -9,8 +9,8 @@ version:        0.3.0
 synopsis:       Persistent based event sourcing.
 description:    Event source library for persistent databases.
 category:       Database
-homepage:       https://github.com/jappeace/persistent-eventsource#readme
-bug-reports:    https://github.com/jappeace/persistent-eventsource/issues
+homepage:       https://github.com/jappeace/persistent-event-source#readme
+bug-reports:    https://github.com/jappeace/persistent-event-source/issues
 author:         Jappie Klooster
 maintainer:     jappieklooster@hotmail.com
 copyright:      2023 Jappie Klooster
@@ -24,7 +24,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/jappeace/persistent-eventsource
+  location: https://github.com/jappeace/persistent-event-source
 
 library
   exposed-modules:
@@ -65,7 +65,7 @@ library
     , esqueleto >=3.5.0.0 && <=3.5.8.1
     , monad-logger
     , persistent
-    , persistent-mtl >=0.3.0.0 && <1.0.0.0
+    , persistent-mtl >=0.3.0.0 && <0.7.0.0
     , text
     , time
     , unliftio-core
@@ -105,7 +105,7 @@ test-suite unit
     , monad-logger
     , persistent
     , persistent-eventsource
-    , persistent-mtl >=0.3.0.0 && <1.0.0.0
+    , persistent-mtl >=0.3.0.0 && <0.7.0.0
     , tasty
     , tasty-hunit
     , tasty-quickcheck
