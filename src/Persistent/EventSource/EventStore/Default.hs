@@ -16,7 +16,7 @@ import Database.Persist.Class(EntityField, PersistField, PersistEntity, PersistR
 import Database.Persist.Class.PersistEntity(Entity(..), Key, SelectOpt(..))
 import Database.Persist.Sql(SqlBackend)
 
-#if MIN_VERSION_esqueleto(3,5,7,0)
+#if MIN_VERSION_esqueleto(3,5,7)
 defaultStoreMany :: (PersistRecordBackend record SqlBackend, Typeable record, MonadSqlQuery m, Ex.SafeToInsert record) => [record] -> m [Key record]
 #else
 defaultStoreMany :: (PersistRecordBackend record SqlBackend, Typeable record, MonadSqlQuery m) => [record] -> m [Key record]
