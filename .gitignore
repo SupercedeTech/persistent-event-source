@@ -8,3 +8,6 @@ TAGS
 
 *.hi
 *.o
+*.out
+*.launch
+*SnapShot_*
