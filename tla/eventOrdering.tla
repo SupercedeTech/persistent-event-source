@@ -1,5 +1,4 @@
 --------------------------- MODULE eventOrdering ---------------------------
-====
 
 EXTENDS Sequences, Integers, TLC, FiniteSets
 CONSTANTS Writer, Readers, Data, NULL, MaxQueue
@@ -51,3 +50,5 @@ Writer <- [model value]
 
 INVARIANT TypeInvariant
 CONSTRAINT Len(queue) < MaxQueue
+
+====
