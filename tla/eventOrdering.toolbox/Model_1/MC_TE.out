@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 105 and seed -964623832696384042 with 6 workers on 12 cores with 7120MB heap and 64MB offheap memory [pid: 21720] (Linux 5.15.56 amd64, AdoptOpenJDK 14.0.1 x86_64, NoopFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 101 and seed 5845561185479900691 with 6 workers on 12 cores with 7120MB heap and 64MB offheap memory [pid: 22497] (Linux 5.15.56 amd64, AdoptOpenJDK 14.0.1 x86_64, NoopFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -25,13 +25,29 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-02-02 13:45:28)
+Starting... (2023-02-02 13:52:30)
 @!@!@ENDMSG 2185 @!@!@
-@!@!@STARTMSG 2105:1 @!@!@
-Evaluating assumption line 6, col 8 to line 6, col 28 of module eventOrdering failed.
-Attempted to check equality of integer 5 with non-integer:
-{1, 2}
-@!@!@ENDMSG 2105 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 0 distinct states generated at 2023-02-02 13:52:30.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 0.0
+@!@!@ENDMSG 2193 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(1) at 2023-02-02 13:52:30: 0 states generated (0 s/min), 0 distinct states found (0 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+0 states generated, 0 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 1.
+@!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 367ms at (2023-02-02 13:45:28)
+Finished in 363ms at (2023-02-02 13:52:30)
 @!@!@ENDMSG 2186 @!@!@
