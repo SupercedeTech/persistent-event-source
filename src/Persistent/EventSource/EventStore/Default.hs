@@ -12,12 +12,15 @@ import Data.Dynamic
 import Data.Time
 import Control.Monad.IO.Class
 import Control.Monad
-import Database.Persist.Class(EntityField, PersistField, PersistEntity, PersistRecordBackend)
+import Database.Persist.Class(EntityField, PersistField, PersistEntity, PersistEntityBackend, PersistRecordBackend)
 import Database.Persist.Class.PersistEntity(Entity(..), Key, SelectOpt(..))
+#if MIN_VERSION_persistent(2,14,0)
+import Database.Persist.Class.PersistEntity(SafeToInsert)
+#endif
 import Database.Persist.Sql(SqlBackend)
 
-#if MIN_VERSION_esqueleto(3,5,7)
-defaultStoreMany :: (PersistRecordBackend record SqlBackend, Typeable record, MonadSqlQuery m, Ex.SafeToInsert record) => [record] -> m [Key record]
+#if MIN_VERSION_persistent(2,14,0)
+defaultStoreMany :: (PersistRecordBackend record SqlBackend, Typeable record, MonadSqlQuery m, SafeToInsert record) => [record] -> m [Key record]
 #else
 defaultStoreMany :: (PersistRecordBackend record SqlBackend, Typeable record, MonadSqlQuery m) => [record] -> m [Key record]
 #endif
@@ -25,7 +28,7 @@ defaultStoreMany = insertMany
 
 defaultGetLastAppliedEventId :: (PersistEntity record, Typeable record,
                              MonadSqlQuery m,
-                             Ex.PersistEntityBackend record ~ SqlBackend) =>
+                             PersistEntityBackend record ~ SqlBackend) =>
                             EntityField record typ -> (record -> b) -> m (Maybe b)
 defaultGetLastAppliedEventId sortField extractId = do
     lastEvent <- selectFirst [] [Desc sortField]
@@ -34,7 +37,7 @@ defaultGetLastAppliedEventId sortField extractId = do
 defaultMarkEventsApplied :: (MonadIO m, PersistEntity record,
                                    Typeable record,
                                     MonadSqlQuery m,
-                                   Ex.PersistEntityBackend record ~ SqlBackend) =>
+                                   PersistEntityBackend record ~ SqlBackend) =>
                                   (t -> Key record) -> (UTCTime -> t -> record) -> [t] -> m ()
 defaultMarkEventsApplied toKey toRecord eventIds = do
     appliedEvents <- forM eventIds $ \eventId -> do
