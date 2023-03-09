@@ -61,8 +61,7 @@ dependencies:
 - monad-logger
 - persistent
 - time
-- esqueleto >= 3.5.0.0 && <= 3.5.8.1 # safe to insert issue prevents higher
-- text
+- esqueleto-mtl
 
 library:
   source-dirs: src

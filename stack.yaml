@@ -2,3 +2,6 @@ resolver: lts-18.19
 
 packages:
 - .
+
+extra-deps:
+- persistent-mtl-0.4.0.0@sha256:af4ddf3dc6915e4198c20913a61d7f768b23cfc14ae4b2671446ed62cc6ca342,2854
