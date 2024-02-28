@@ -3,9 +3,9 @@
 
 module Persistent.EventSource.Aggregate where
 
-import Database.Persist.Monad (MonadSqlQuery)
-import Persistent.EventSource.Projection
 import Control.Monad.IO.Class
+import Database.Persist.Sql (SqlPersistT)
+import Persistent.EventSource.Projection
 
 -- | Aggregate is an intermediate step, allowing you to specify how
 --   your changeable commands are stored.
@@ -21,5 +21,4 @@ class Projection a => Aggregate a where
 
   -- TODO: handle invalid actions
   -- | Validate action and generate events, if any.
-  act :: ( MonadSqlQuery m, MonadIO m ) =>
-         Maybe (Actor a) -> Command a -> m [Event a]
+  act :: MonadIO m => Maybe (Actor a) -> Command a -> SqlPersistT m [Event a]
